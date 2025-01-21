@@ -19,7 +19,6 @@ function App() {
             <Routes>
               {/* Redirect root path to external URL */}
               <Route path="/" element={<Home/>} />
-              <Route path="/misronconsulting" element={<Home/>} />
               
               {/* Define other routes */}
               <Route path="/about" element={<About />} />
