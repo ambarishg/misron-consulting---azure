@@ -1,4 +1,5 @@
-import { Box, Flex, Text, VStack, Link } from "@chakra-ui/react"
+import { Box, Flex, Text, VStack } from "@chakra-ui/react";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 
 const Footer = () => {
   return (
@@ -14,16 +15,16 @@ const Footer = () => {
           <Text fontSize="lg" fontWeight="semibold" mb={2}>
             Quick Links
           </Text>
-          <Link href="/" _hover={{ color: "brand.200" }}>
+          <Link to="/" style={{ textDecoration: 'none', color: 'inherit', _hover: { color: 'brand.200' } }}>
             Home
           </Link>
-          <Link href="/about" _hover={{ color: "brand.200" }}>
+          <Link to="/about" style={{ textDecoration: 'none', color: 'inherit', _hover: { color: 'brand.200' } }}>
             About
           </Link>
-          <Link href="/services" _hover={{ color: "brand.200" }}>
+          <Link to="/services" style={{ textDecoration: 'none', color: 'inherit', _hover: { color: 'brand.200' } }}>
             Services
           </Link>
-          <Link href="/contact" _hover={{ color: "brand.200" }}>
+          <Link to="/contact" style={{ textDecoration: 'none', color: 'inherit', _hover: { color: 'brand.200' } }}>
             Contact
           </Link>
         </VStack>
@@ -40,8 +41,7 @@ const Footer = () => {
         &copy; {new Date().getFullYear()} Misron Consulting. All rights reserved.
       </Text>
     </Box>
-  )
-}
+  );
+};
 
-export default Footer
-
+export default Footer;
