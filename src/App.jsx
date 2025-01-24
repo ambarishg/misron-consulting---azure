@@ -12,7 +12,7 @@ import Partners from "./components/Partners";
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Router basename="/misronconsulting"> {/* Set the basename for routing */}
+      <Router> {/* Set the basename for routing */}
         <Box minHeight="100vh" display="flex" flexDirection="column">
           <Header />
           <Box flexGrow={1}>
