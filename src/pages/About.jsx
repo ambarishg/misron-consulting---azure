@@ -1,55 +1,125 @@
-import { Box, Container, Heading, Text, VStack, UnorderedList, ListItem } from "@chakra-ui/react";
+import {
+  Box,
+  Container,
+  Heading,
+  Text,
+  VStack,
+  UnorderedList,
+  ListItem,
+  useColorModeValue,
+  Icon,
+} from "@chakra-ui/react";
+import { motion } from "framer-motion";
+import { FaChartLine, FaRobot, FaLanguage, FaDatabase, FaLightbulb } from "react-icons/fa";
+
+const MotionBox = motion(Box);
 
 const About = () => {
-  return (
-    <Container maxW="container.xl" py={12}>
-      <VStack spacing={12} align="stretch">
-        <Heading as="h1" size="2xl" textAlign="center" color="brand.600">
-          About Misron Consulting
-        </Heading>
+  const headingColor = useColorModeValue("brand.700", "brand.200");
+  const textColor = useColorModeValue("gray.700", "gray.300");
+  const iconColor = useColorModeValue("brand.500", "brand.200");
 
-        <Box>
-          <Heading as="h2" size="xl" mb={4} color="brand.600">
+  return (
+    <Container maxW="container.xl" py={16}>
+      <VStack spacing={16} align="stretch">
+        {/* Main Heading */}
+        <MotionBox
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          textAlign="center"
+        >
+          <Heading
+            as="h1"
+            size="2xl"
+            fontWeight="bold"
+            bgGradient="linear(to-r, brand.600, brand.400)"
+            bgClip="text"
+          >
+            About Misron Consulting
+          </Heading>
+          <Text fontSize="lg" color={textColor} mt={4}>
+            Empowering businesses with cutting-edge data and AI solutions.
+          </Text>
+        </MotionBox>
+
+        {/* Mission Section */}
+        <MotionBox
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+        >
+          <Heading as="h2" size="xl" mb={6} color={headingColor}>
             Our Mission
           </Heading>
-          <Text fontSize="lg" lineHeight="tall">
+          <Text fontSize="lg" color={textColor} lineHeight="tall">
             At Misron Consulting, we are dedicated to empowering organizations with innovative data and AI-driven solutions. Our mission is to unlock the full potential of data, enabling businesses to achieve transformative growth, operational excellence, and a competitive edge in their respective industries.
           </Text>
-        </Box>
+        </MotionBox>
 
-        <Box>
-          <Heading as="h2" size="xl" mb={4} color="brand.600">
+        {/* Expertise Section */}
+        <MotionBox
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+        >
+          <Heading as="h2" size="xl" mb={6} color={headingColor}>
             Our Expertise
           </Heading>
-          <Text fontSize="lg" mb={4} lineHeight="tall">
+          <Text fontSize="lg" color={textColor} mb={6} lineHeight="tall">
             With a proven track record in data science, machine learning, and artificial intelligence, our team of seasoned professionals specializes in delivering tailored solutions to address complex business challenges. Our core competencies include:
           </Text>
-          <UnorderedList spacing={2} fontSize="lg" pl={6}>
-            <ListItem>Advanced data analytics and visualization</ListItem>
-            <ListItem>End-to-end machine learning model development and deployment</ListItem>
-            <ListItem>Natural Language Processing (NLP) and computer vision solutions</ListItem>
-            <ListItem>Scalable big data processing and management</ListItem>
-            <ListItem>Strategic AI consulting and implementation</ListItem>
+          <UnorderedList spacing={4} fontSize="lg" pl={6}>
+            <ListItem display="flex" alignItems="center">
+              <Icon as={FaChartLine} color={iconColor} mr={3} />
+              Advanced data analytics and visualization
+            </ListItem>
+            <ListItem display="flex" alignItems="center">
+              <Icon as={FaRobot} color={iconColor} mr={3} />
+              End-to-end machine learning model development and deployment
+            </ListItem>
+            <ListItem display="flex" alignItems="center">
+              <Icon as={FaLanguage} color={iconColor} mr={3} />
+              Natural Language Processing (NLP) and computer vision solutions
+            </ListItem>
+            <ListItem display="flex" alignItems="center">
+              <Icon as={FaDatabase} color={iconColor} mr={3} />
+              Scalable big data processing and management
+            </ListItem>
+            <ListItem display="flex" alignItems="center">
+              <Icon as={FaLightbulb} color={iconColor} mr={3} />
+              Strategic AI consulting and implementation
+            </ListItem>
           </UnorderedList>
-        </Box>
+        </MotionBox>
 
-        <Box>
-          <Heading as="h2" size="xl" mb={4} color="brand.600">
+        {/* Approach Section */}
+        <MotionBox
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+        >
+          <Heading as="h2" size="xl" mb={6} color={headingColor}>
             Our Approach
           </Heading>
-          <Text fontSize="lg" lineHeight="tall">
+          <Text fontSize="lg" color={textColor} lineHeight="tall">
             We pride ourselves on a client-centric methodology, fostering close collaboration to deeply understand your unique challenges and objectives. By combining industry expertise with cutting-edge technology, we design and implement customized solutions that deliver measurable results and drive sustainable success.
           </Text>
-        </Box>
+        </MotionBox>
 
-        <Box>
-          <Heading as="h2" size="xl" mb={4} color="brand.600">
+        {/* Future Section */}
+        <MotionBox
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.8 }}
+        >
+          <Heading as="h2" size="xl" mb={6} color={headingColor}>
             Shaping the Future Together
           </Heading>
-          <Text fontSize="lg" lineHeight="tall">
+          <Text fontSize="lg" color={textColor} lineHeight="tall">
             At Misron Consulting, we are committed to pushing the boundaries of innovation in data and AI. We invite you to partner with us as we redefine what’s possible. Whether your goal is to optimize operations, uncover actionable insights, or pioneer groundbreaking products, our team is here to guide you toward achieving your vision in the data-driven era.
           </Text>
-        </Box>
+        </MotionBox>
       </VStack>
     </Container>
   );
