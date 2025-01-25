@@ -9,7 +9,7 @@ const Home = () => {
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10} alignItems="center">
           {/* Text Section */}
           <Box textAlign={{ base: "center", md: "left" }}>
-            <Heading as="h1" size="2xl" mb={4} color="#007DC5">
+            <Heading as="h1" size="2xl" mb={8} color="#007DC5">
               Welcome to Misron Consulting
             </Heading>
             <Text fontSize="xl" mb={8} color="#333">
