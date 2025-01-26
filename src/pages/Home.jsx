@@ -46,10 +46,11 @@ const Home = () => {
           </Heading>
           <SimpleGrid columns={{ base: 1, md: 3 }} spacing={8}>
             {[
+              { title: "Data Engineering", description: "Build robust data pipelines and architectures to support data-driven decision making." }, // New Service Added
               { title: "Data Analytics", description: "Transform raw data into actionable insights to drive strategic decisions." },
               { title: "Machine Learning", description: "Leverage cutting-edge ML models to address complex business challenges." },
               { title: "AI Consulting", description: "Receive expert guidance on integrating AI seamlessly into your operations." },
-              { title: "Data Engineering", description: "Build robust data pipelines and architectures to support data-driven decision making." }, // New Service Added
+              
             ].map((service, index) => (
               <Box 
                 key={index} 
