@@ -7,13 +7,24 @@ const MotionBox = motion(Box);
 const Services = () => {
   const services = [
     {
+      title: "Data Engineering",
+      description: "Build robust, scalable, and efficient data pipelines to power your data-driven decisions.",
+      features: [
+        "Design and implementation of ETL/ELT pipelines",
+        "Data warehouse and data lake architecture",
+        "Real-time data streaming solutions",
+        "Data integration from multiple sources",
+        "Data quality and governance frameworks",
+      ],
+    },
+    {
       title: "Data Analytics",
       description: "Transform raw data into actionable insights with advanced analytics solutions.",
       features: [
         "Data cleaning and preprocessing",
         "Exploratory data analysis",
         "Interactive dashboards and visualizations",
-        "Predictive analytics",
+        "Predictive analytics and reporting",
       ],
     },
     {
@@ -42,10 +53,33 @@ const Services = () => {
       features: [
         "Text classification and sentiment analysis",
         "Named entity recognition",
-        "Chatbot development",
+        "Chatbot and virtual assistant development",
         "Language translation and summarization",
       ],
     },
+    {
+      title: "Computer Vision",
+      description: "Enable machines to interpret and analyze visual data for automation and decision-making.",
+      features: [
+        "Object detection and recognition",
+        "Image and video analysis",
+        "Facial recognition and biometric systems",
+        "Augmented reality (AR) solutions",
+        "Real-time video processing and analytics",
+      ],
+    },
+    {
+      title: "Generative AI",
+      description: "Harness the power of generative AI to create innovative solutions and automate creative processes.",
+      features: [
+        "Text generation and content creation",
+        "Image and video synthesis",
+        "AI-driven design and art generation",
+        "Personalized recommendation systems",
+        "Fine-tuning and deployment of generative models",
+      ],
+    },
+    
   ];
 
   const cardBg = useColorModeValue("white", "gray.800");
@@ -58,7 +92,7 @@ const Services = () => {
           Our Services
         </Heading>
 
-        <SimpleGrid columns={{ base: 1, md: 2, lg: 2 }} spacing={10}>
+        <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={10}>
           {services.map((service, index) => (
             <MotionBox
               key={index}
