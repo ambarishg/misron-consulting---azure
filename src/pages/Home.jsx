@@ -21,8 +21,8 @@ const Home = () => {
               colorScheme="blue" 
               size="lg" 
               variant="solid"
-              _hover={{ transform: "scale(1.05)" }}
-              transition="transform 0.2s"
+              _hover={{ transform: "scale(1.05)", boxShadow: "lg" }}
+              transition="all 0.2s"
             >
               Get Started
             </Button>
@@ -36,6 +36,8 @@ const Home = () => {
             boxSize={{ base: '100%', md: '500px' }}
             objectFit="cover"
             shadow="md"
+            _hover={{ transform: "scale(1.02)", boxShadow: "xl" }}
+            transition="transform 0.3s, box-shadow 0.3s"
           />
         </SimpleGrid>
 
@@ -46,11 +48,10 @@ const Home = () => {
           </Heading>
           <SimpleGrid columns={{ base: 1, md: 3 }} spacing={8}>
             {[
-              { title: "Data Engineering", description: "Build robust data pipelines and architectures to support data-driven decision making." }, // New Service Added
+              { title: "Data Engineering", description: "Build robust data pipelines and architectures to support data-driven decision making." },
               { title: "Data Analytics", description: "Transform raw data into actionable insights to drive strategic decisions." },
               { title: "Machine Learning", description: "Leverage cutting-edge ML models to address complex business challenges." },
               { title: "AI Consulting", description: "Receive expert guidance on integrating AI seamlessly into your operations." },
-              
             ].map((service, index) => (
               <Box 
                 key={index} 
@@ -59,8 +60,8 @@ const Home = () => {
                 p={6} 
                 shadow="md" 
                 bg="white" 
-                transition="0.3s" 
-                _hover={{ shadow: "lg", transform: "translateY(-5px)" }}
+                transition="all 0.3s" 
+                _hover={{ shadow: "xl", transform: "translateY(-10px)", bg: "blue.50" }}
               >
                 <Heading as="h3" size="md" mb={4} color="blue.800" fontWeight="medium">
                   {service.title}
@@ -72,7 +73,15 @@ const Home = () => {
         </Box>
 
         {/* Why Choose Us Section */}
-        <Box textAlign="center" maxW="800px" mx="auto">
+        <Box 
+          textAlign="center" 
+          maxW="800px" 
+          mx="auto"
+          bgGradient="linear(to-r, blue.50, white)"
+          p={8}
+          borderRadius="lg"
+          boxShadow="md"
+        >
           <Heading as="h2" size="xl" mb={6} color="blue.800" fontWeight="semibold">
             Why Choose Misron Consulting?
           </Heading>
@@ -91,20 +100,28 @@ const Home = () => {
         </Box>
 
         {/* Call-to-Action Section */}
-        <Box bg="white" p={8} borderRadius="lg" width="full" boxShadow="md" textAlign="center">
-          <Heading as="h2" size="xl" mb={6} color="blue.800" fontWeight="semibold">
+        <Box 
+          bgGradient="linear(to-r, blue.500, blue.600)" 
+          p={8} 
+          borderRadius="lg" 
+          width="full" 
+          boxShadow="lg" 
+          textAlign="center"
+          color="white"
+        >
+          <Heading as="h2" size="xl" mb={6} fontWeight="semibold">
             Ready to Harness the Power of Data and AI?
           </Heading>
-          <Text mb={8} color="gray.600" lineHeight="tall">
+          <Text mb={8} lineHeight="tall">
             Contact us today to explore how we can help transform your business through innovative solutions.
           </Text>
           <Button 
             as={RouterLink} 
             to="/contact" 
-            colorScheme="blue" 
+            colorScheme="whiteAlpha" 
             size="lg"
-            _hover={{ transform: "scale(1.05)" }}
-            transition="transform 0.2s"
+            _hover={{ transform: "scale(1.05)", bg: "white", color: "blue.600" }}
+            transition="all 0.2s"
           >
             Contact Us
           </Button>
