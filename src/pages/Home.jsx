@@ -28,16 +28,7 @@ const Home = () => {
             </Button>
           </Box>
 
-          {/* Placeholder Section */}
-          <Box 
-            borderRadius="lg"
-            width="100%"
-            height={{ base: "300px", md: "400px" }}
-            bgGradient="linear(to-r, blue.100, blue.200)"
-            shadow="md"
-          >
-            {/* Optional Content or Animation can be added here */}
-          </Box>
+          
         </SimpleGrid>
 
         {/* Services Section */}
