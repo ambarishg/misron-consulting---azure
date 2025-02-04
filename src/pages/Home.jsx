@@ -1,4 +1,4 @@
-import { Box, Button, Container, Heading, Image, Text, SimpleGrid, VStack, Link } from "@chakra-ui/react";
+import { Box, Button, Container, Heading, Text, SimpleGrid, VStack, Link } from "@chakra-ui/react";
 import { Link as RouterLink } from "react-router-dom";
 
 const Home = () => {
@@ -28,18 +28,16 @@ const Home = () => {
             </Button>
           </Box>
 
-          {/* Image Section */}
-          <Image 
-            src="/COLAB.jpg" // Ensure this path is correct
-            alt="Professional Collaboration"
+          {/* Placeholder Section */}
+          <Box 
             borderRadius="lg"
             width="100%"
             height={{ base: "300px", md: "400px" }}
-            objectFit="cover"
+            bgGradient="linear(to-r, blue.100, blue.200)"
             shadow="md"
-            _hover={{ transform: "scale(1.02)", boxShadow: "xl" }}
-            transition="transform 0.3s, box-shadow 0.3s"
-          />
+          >
+            {/* Optional Content or Animation can be added here */}
+          </Box>
         </SimpleGrid>
 
         {/* Services Section */}
