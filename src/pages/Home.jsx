@@ -28,18 +28,7 @@ const Home = () => {
             </Button>
           </Box>
 
-          {/* Image Section */}
-          <Image 
-            src="/Designer.jpeg" // Ensure this path is correct
-            alt="Professional Collaboration"
-            borderRadius="lg"
-            width="100%"
-            height={{ base: "300px", md: "400px" }}
-            objectFit="cover"
-            shadow="md"
-            _hover={{ transform: "scale(1.02)", boxShadow: "xl" }}
-            transition="transform 0.3s, box-shadow 0.3s"
-          />
+          
         </SimpleGrid>
 
         {/* Services Section */}
