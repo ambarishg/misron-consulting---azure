@@ -29,10 +29,8 @@ const Home = () => {
           </Box>
 
           <Box textAlign="center">
-            <Image src="/MISRON.png" alt="MISRON" width="100%" height="auto" />
+            <Image src="/MISRON.png" alt="MISRON Consulting Logo" width="100%" height="auto" />
           </Box>
-
-          
         </SimpleGrid>
 
         {/* Services Section */}
@@ -42,12 +40,12 @@ const Home = () => {
           </Heading>
           <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={{ base: 6, md: 8 }}>
             {[
-              { title: "Data Engineering", description: "Build robust data pipelines and architectures to support data-driven decision making." },
-              { title: "Data Analytics", description: "Transform raw data into actionable insights to drive strategic decisions." },
-              { title: "Machine Learning", description: "Leverage cutting-edge ML models to address complex business challenges." },
-              { title: "AI Consulting", description: "Receive expert guidance on integrating AI seamlessly into your operations." },
-              { title: "Natural Language Processing", description: "Utilize NLP techniques to analyze and generate human language for enhanced communication." },
-              { title: "Computer Vision", description: "Implement computer vision solutions to interpret and process visual information from the world." },
+              { title: "Data Engineering", description: "Develop robust data pipelines and architectures that facilitate data-driven decision-making." },
+              { title: "Data Analytics", description: "Transform raw data into actionable insights that inform strategic decisions." },
+              { title: "Machine Learning", description: "Utilize advanced machine learning models to tackle complex business challenges." },
+              { title: "AI Consulting", description: "Receive expert guidance on the seamless integration of AI into your operations." },
+              { title: "Natural Language Processing", description: "Employ NLP techniques to analyze and generate human language for improved communication." },
+              { title: "Computer Vision", description: "Implement computer vision solutions to interpret and process visual information effectively." },
               { title: "Generative AI", description: "Explore innovative generative models to create new content and enhance creativity." },
             ].map((service, index) => (
               <Box 
@@ -90,7 +88,7 @@ const Home = () => {
             to="/about" 
             color="blue.500" 
             fontWeight="semibold"
-            _hover={{ textDecoration: "underline", color: "blue.600" }}
+            _hover={{ textDecoration: "underline", color:"blue.600"}}
           >
             Discover More About Us
           </Link>
@@ -100,25 +98,29 @@ const Home = () => {
         <Box 
           bgGradient="linear(to-r, blue.500, blue.600)" 
           p={{ base: 6, md: 8 }} 
-          borderRadius="lg" 
-          width="full" 
-          boxShadow="lg" 
+          borderRadius="lg"
+          width="full"
+          boxShadow="lg"
           textAlign="center"
           color="white"
         >
-          <Heading as="h2" size={{ base: "lg", md: "xl" }} mb={{ base: 4, md: 6 }} fontWeight="semibold">
+          <Heading as="h2" size={{ base:"lg", md:"xl"}} mb={{base:"4",md:"6"}} fontWeight='semibold'>
             Ready to Harness the Power of Data and AI?
           </Heading>
-          <Text mb={{ base: 4, md: 8 }} lineHeight="tall">
-            Contact us today to explore how we can help transform your business through innovative solutions.
+          <Text mb={{base:"4",md:"8"}} lineHeight='tall'>
+            Contact us today to discover how we can help transform your business through innovative solutions.
           </Text>
           <Button 
             as={RouterLink} 
-            to="/contact" 
-            colorScheme="whiteAlpha" 
-            size={{ base: "md", md: "lg" }}
-            _hover={{ transform: "scale(1.05)", bg: "white", color: "blue.600" }}
-            transition="all 0.2s"
+            to="/contact"
+            colorScheme='whiteAlpha'
+            size={{base:'md',md:'lg'}}
+            _hover={{
+              transform:'scale(1.05)',
+              bg:'white',
+              color:'blue.600'
+            }}
+            transition='all .2s'
           >
             Contact Us
           </Button>
