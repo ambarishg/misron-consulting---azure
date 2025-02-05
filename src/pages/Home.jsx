@@ -28,6 +28,10 @@ const Home = () => {
             </Button>
           </Box>
 
+          <Box textAlign="center">
+            <Image src="/MISRON.png" alt="MISRON" width="100%" height="auto" />
+          </Box>
+
           
         </SimpleGrid>
 
