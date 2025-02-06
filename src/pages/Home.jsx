@@ -13,11 +13,13 @@ const Home = () => {
             Welcome to Misron Consulting
           </Heading>
 
-            <Text fontSize={{ base: "lg", md: "xl" }} mb={{ base: 6, md: 8 }} color="gray.600" lineHeight="tall">
-              Empowering Your Business with Advanced Data and AI Solutions <br/>
               <Text as="span" fontSize={{base:"md",md:"lg"}} fontStyle="italic" color="gray.500">
               A boutique consultancy firm
               </Text>
+
+            <Text fontSize={{ base: "lg", md: "xl" }} mb={{ base: 6, md: 8 }} color="gray.600" lineHeight="tall">
+              Empowering Your Business with Advanced Data and AI Solutions <br/>
+              
             </Text>
             <Button 
               as={RouterLink} 
