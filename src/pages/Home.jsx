@@ -9,11 +9,15 @@ const Home = () => {
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={{ base: 6, md: 10 }} alignItems="center">
           {/* Text Section */}
           <Box textAlign={{ base: "center", md: "left" }}>
-            <Heading as="h1" size={{ base: "xl", md: "2xl" }} mb={{ base: 4, md: 6 }} color="blue.800" fontWeight="bold">
-              Welcome to Misron Consulting
-            </Heading>
+          <Heading as="h1" size={{ base: "xl", md: "2xl" }} mb={{ base: 4, md: 6 }} color="blue.800" fontWeight="bold">
+            Welcome to <Heading as="span" color="blue.800">Misron Consulting</Heading>
+          </Heading>
+
             <Text fontSize={{ base: "lg", md: "xl" }} mb={{ base: 6, md: 8 }} color="gray.600" lineHeight="tall">
-              Empowering Your Business with Advanced Data and AI Solutions
+              Empowering Your Business with Advanced Data and AI Solutions <br/>
+              <Text as="span" fontSize={{base:"md",md:"lg"}} fontStyle="italic" color="gray.500">
+              A boutique consultancy firm.
+              </Text>
             </Text>
             <Button 
               as={RouterLink} 
