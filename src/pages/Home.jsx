@@ -10,13 +10,13 @@ const Home = () => {
           {/* Text Section */}
           <Box textAlign={{ base: "center", md: "left" }}>
           <Heading as="h1" size={{ base: "xl", md: "2xl" }} mb={{ base: 4, md: 6 }} color="blue.800" fontWeight="bold">
-            Welcome to <Heading as="span" color="blue.800">Misron Consulting</Heading>
+            Welcome to Misron Consulting
           </Heading>
 
             <Text fontSize={{ base: "lg", md: "xl" }} mb={{ base: 6, md: 8 }} color="gray.600" lineHeight="tall">
               Empowering Your Business with Advanced Data and AI Solutions <br/>
               <Text as="span" fontSize={{base:"md",md:"lg"}} fontStyle="italic" color="gray.500">
-              A boutique consultancy firm.
+              A boutique consultancy firm
               </Text>
             </Text>
             <Button 
