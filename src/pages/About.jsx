@@ -17,8 +17,8 @@ import { FaChartLine, FaRobot, FaLanguage, FaDatabase, FaLightbulb } from "react
 const MotionBox = motion(Box);
 
 const About = () => {
-  const headingColor = useColorModeValue("blue.700", "blue.300");
-  const textColor = useColorModeValue("gray.700", "gray.300");
+  const headingColor = useColorModeValue("brand.600", "brand.200");
+  const textColor = useColorModeValue("gray.600", "gray.300");
   const iconColor = useColorModeValue("blue.500", "blue.200");
   const dividerColor = useColorModeValue("gray.200", "gray.700");
   const containerBg = useColorModeValue("gray.50", "gray.900"); // Very light background for better contrast
@@ -47,15 +47,14 @@ const About = () => {
         >
           <Heading
             as="h1"
-            size="3xl" // Increased size for impact
+            size="2xl" // Increased size for impact
             fontWeight="bold" // Use extrabold for a strong statement
-            bgGradient="linear(to-r, blue.600, blue.400)" // Use consistent blue gradient
-            bgClip="text"
+            color={headingColor}
             mb={2} // Add spacing below the heading
           >
             About Misron Consulting
           </Heading>
-          <Text fontSize="xl" color={textColor} mt={4}>
+          <Text fontSize="lg" color={textColor} mt={4}>
             Empowering organizations with innovative data and AI solutions.
           </Text>
         </MotionBox>
