@@ -50,6 +50,26 @@ const About = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <Heading as="h2" size="xl" mb={6} color={headingColor}>
+            The Name
+          </Heading>
+          <Text fontSize="lg" color={textColor} lineHeight="tall">
+            Misron is a Bengali word that means combination or mixture 
+            We believe that the best solutions are created by blending 
+            diverse perspectives and expertise.
+            We chose this name to reflect our commitment to 
+            blending cutting-edge technology with 
+            industry expertise to deliver 
+            transformative solutions for our clients.
+          </Text>
+        </MotionBox>
+
+        {/* Mission Section */}
+        <MotionBox
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+        >
+          <Heading as="h2" size="xl" mb={6} color={headingColor}>
             Our Mission
           </Heading>
           <Text fontSize="lg" color={textColor} lineHeight="tall">
