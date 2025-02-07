@@ -17,8 +17,6 @@ function Projects() {
       overflow="hidden"
       borderColor={borderColor}
       boxShadow="md" // Add a subtle shadow for depth
-      transition="transform 0.2s" // Add a smooth transform transition
-      _hover={{ transform: "scale(1.02)" }} // Slightly scale up on hover
     >
       <Image
         src="./aibeehealth.png" // Replace with your project image URL
