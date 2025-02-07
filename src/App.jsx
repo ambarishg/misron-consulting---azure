@@ -8,6 +8,7 @@ import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import theme from "./theme";
 import Partners from "./components/Partners";
+import Projects from "./components/Projects";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
               <Route path="/services" element={<Services />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/partners" element={<Partners />} />
+              <Route path="/projects" element={<Projects />} />
             </Routes>
           </Box>
           <Footer />

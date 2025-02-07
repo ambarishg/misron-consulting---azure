@@ -21,9 +21,9 @@ const Header = () => {
           <Link as={RouterLink} to="/services" mr={6} _hover={{ color: "brand.200" }}>
             Services
           </Link>
-          {/* <Link as={RouterLink} to="/partners" mr={6} _hover={{ color: "brand.200" }}>
-            Partners
-          </Link> */}
+          <Link as={RouterLink} to="/projects" mr={6} onClick={onToggle}>
+              Projects    
+          </Link>
           <Link as={RouterLink} to="/contact" _hover={{ color: "brand.200" }}>
             Contact
           </Link>
@@ -48,6 +48,9 @@ const Header = () => {
             </Link>
             <Link as={RouterLink} to="/services" onClick={onToggle}>
               Services
+            </Link>
+            <Link as={RouterLink} to="/aibeehealth" onClick={onToggle}>
+              Show Case Aibee Health
             </Link>
             <Link as={RouterLink} to="/contact" onClick={onToggle}>
               Contact
