@@ -22,7 +22,7 @@ const Header = () => {
             Services
           </Link>
           <Link as={RouterLink} to="/projects" mr={6} onClick={onToggle}>
-              Projects    
+              Customer Stories    
           </Link>
           <Link as={RouterLink} to="/contact" _hover={{ color: "brand.200" }}>
             Contact

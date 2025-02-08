@@ -43,7 +43,7 @@ function Projects() {
           AI Bee Health
         </Heading>
         <Text mt={2} color={textColor}>
-          AI Bee Health is a project that uses advanced deep learning models to detect bee diseases,
+          AI Bee Health is a product built by us that uses advanced deep learning models to detect bee diseases,
           ensuring healthier bee colonies and improved honey production.
         </Text>
 
