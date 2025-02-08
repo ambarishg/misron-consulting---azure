@@ -8,8 +8,7 @@ import {
   ListItem,
   useColorModeValue,
   Icon,
-  Divider,
-  SimpleGrid,
+  Divider
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { FaChartLine, FaRobot, FaLanguage, FaDatabase, FaLightbulb } from "react-icons/fa";
@@ -77,7 +76,7 @@ const About = () => {
             The Name
           </Heading>
           <Text fontSize="lg" color={textColor} lineHeight="tall">
-            "Misron" is a Bengali word that signifies a harmonious combination or blend. We
+          &quot;Misron&quot; is a Bengali word that signifies a harmonious combination or blend. We
             embrace this concept, firmly believing that the most innovative solutions emerge
             from the fusion of diverse perspectives and specialized expertise. This name
             embodies our dedication to seamlessly integrating state-of-the-art technology with
