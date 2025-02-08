@@ -9,6 +9,7 @@ import Contact from "./pages/Contact";
 import theme from "./theme";
 import Partners from "./components/Partners";
 import Projects from "./components/Projects";
+import CoInnovationServices from "./pages/CoInnovationServices";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
               <Route path="/contact" element={<Contact />} />
               <Route path="/partners" element={<Partners />} />
               <Route path="/projects" element={<Projects />} />
+              <Route path= "/coinnovationservices" element={<CoInnovationServices />} />
             </Routes>
           </Box>
           <Footer />
