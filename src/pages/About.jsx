@@ -35,8 +35,8 @@ const About = () => {
   };
 
   return (
-    <Container maxW="container.xl" py={16}>
-      <VStack spacing={16} align="stretch">
+    <Container maxW="container.xl" py={4}>
+      <VStack spacing={4} align="stretch">
         {/* Main Heading */}
         <MotionBox
           variants={sectionVariants}
@@ -72,7 +72,7 @@ const About = () => {
           borderWidth="1px"
           borderColor={dividerColor} // Consistent border color
         >
-          <Heading as="h2" size="2xl" mb={4} color={headingColor} fontWeight="semibold">
+          <Heading as="h2" size="xl" mb={4} color={headingColor} fontWeight="semibold">
             The Name
           </Heading>
           <Text fontSize="lg" color={textColor} lineHeight="tall">
@@ -99,7 +99,7 @@ const About = () => {
           borderWidth="1px"
           borderColor={dividerColor} // Consistent border color
         >
-          <Heading as="h2" size="2xl" mb={4} color={headingColor} fontWeight="semibold">
+          <Heading as="h2" size="xl" mb={4} color={headingColor} fontWeight="semibold">
             Our Mission
           </Heading>
           <Text fontSize="lg" color={textColor} lineHeight="tall">
@@ -125,7 +125,7 @@ const About = () => {
           borderWidth="1px"
           borderColor={dividerColor} // Consistent border color
         >
-          <Heading as="h2" size="2xl" mb={4} color={headingColor} fontWeight="semibold">
+          <Heading as="h2" size="xl" mb={4} color={headingColor} fontWeight="semibold">
             Our Expertise
           </Heading>
           <Text fontSize="lg" color={textColor} mb={6} lineHeight="tall">
@@ -172,7 +172,7 @@ const About = () => {
           borderWidth="1px"
           borderColor={dividerColor} // Consistent border color
         >
-          <Heading as="h2" size="2xl" mb={4} color={headingColor} fontWeight="semibold">
+          <Heading as="h2" size="xl" mb={4} color={headingColor} fontWeight="semibold">
             Our Approach
           </Heading>
           <Text fontSize="lg" color={textColor} lineHeight="tall">
@@ -197,7 +197,7 @@ const About = () => {
           borderWidth="1px"
           borderColor={dividerColor} // Consistent border color
         >
-          <Heading as="h2" size="2xl" mb={4} color={headingColor} fontWeight="semibold">
+          <Heading as="h2" size="xl" mb={4} color={headingColor} fontWeight="semibold">
             Shaping the Future Together
           </Heading>
           <Text fontSize="lg" color={textColor} lineHeight="tall">
