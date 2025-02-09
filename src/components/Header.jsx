@@ -35,25 +35,29 @@ const Header = () => {
         <IconButton
           display={{ base: "block", md: "none" }}
           onClick={onToggle}
-          icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
-          variant="outline"
+          icon={isOpen ? <CloseIcon color="white" /> : <HamburgerIcon color="white" />}
+          variant="ghost"
           aria-label="Toggle menu"
+          _hover={{ bg: 'brand.800' }}
         />
       </Flex>
       {isOpen && (
         <Box pb={4} display={{ md: "none" }}>
-          <VStack spacing={4} align="stretch">
+          <VStack spacing={4} align="stretch" px={4}> {/*  Added px={4} here */}
             <Link as={RouterLink} to="/" onClick={onToggle}>
               Home
             </Link>
             <Link as={RouterLink} to="/about" onClick={onToggle}>
               About
             </Link>
+            <Link as={RouterLink} to="/coinnovationservices" onClick={onToggle}>
+            Innovation
+            </Link>
             <Link as={RouterLink} to="/services" onClick={onToggle}>
               Services
             </Link>
-            <Link as={RouterLink} to="/aibeehealth" onClick={onToggle}>
-              Show Case Aibee Health
+            <Link as={RouterLink} to="/projects" onClick={onToggle}>
+              Customer Stories
             </Link>
             <Link as={RouterLink} to="/contact" onClick={onToggle}>
               Contact
@@ -66,4 +70,3 @@ const Header = () => {
 }
 
 export default Header
-
