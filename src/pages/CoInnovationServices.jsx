@@ -123,6 +123,9 @@ const CoInnovationServices = () => {
   const aiHeadingColor = useColorModeValue("blue.700", "blue.200");
   const aiIconColor = useColorModeValue("blue.500", "blue.300");
 
+  // Dark Orange Border Color
+  const darkOrangeBorder = useColorModeValue("orange.500", "orange.700");
+
   return (
     <Container maxW="container.xl" py={{ base: 8, md: 16 }}>
       <VStack spacing={{ base: 8, md: 16 }} align="stretch">
@@ -147,19 +150,24 @@ const CoInnovationServices = () => {
           columns={{ base: 1, md: 2, lg: 3 }}
           spacing={{ base: 6, md: 10 }}
         >
+          {/* AI Platform Service */}
                     {/* AI Platform Section */}
                     <MotionBox
-            borderWidth={1}
+            borderWidth={2} // Increased for emphasis
             borderRadius="lg"
             p={{ base: 6, md: 8 }}
             shadow="md"
             bg={aiCardBg}
-            borderColor={cardBorder}
+            borderColor={darkOrangeBorder} // Use the dark orange border
             whileHover={{ scale: 1.03, transition: { duration: 0.2 } }}
           >
             <VStack align="start" spacing={{ base: 3, md: 4 }}>
               <Stack direction="row" align="center">
-                <Icon as={aiPlatformService.icon} boxSize={6} color={aiIconColor} />
+                <Icon
+                  as={aiPlatformService.icon}
+                  boxSize={6}
+                  color={aiIconColor}
+                />
                 <Heading
                   as="h3"
                   size={{ base: "lg", md: "xl" }}
@@ -191,7 +199,6 @@ const CoInnovationServices = () => {
               </UnorderedList>
             </VStack>
           </MotionBox>
-          
           {services.map((service, index) => (
             <MotionBox
               key={index}
