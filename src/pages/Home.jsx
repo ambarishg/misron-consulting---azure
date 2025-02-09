@@ -9,17 +9,17 @@ const Home = () => {
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={{ base: 6, md: 10 }} alignItems="center">
           {/* Text Section */}
           <Box textAlign={{ base: "center", md: "left" }}>
-          <Heading as="h1" size={{ base: "xl", md: "2xl" }} mb={{ base: 4, md: 6 }} color="blue.800" fontWeight="bold">
-            Welcome to Misron Consulting
-          </Heading>
+            <Heading as="h1" size={{ base: "xl", md: "2xl" }} mb={{ base: 4, md: 6 }} color="blue.800" fontWeight="bold">
+              Welcome to Misron Consulting
+            </Heading>
 
-              <Text as="span" fontSize={{base:"md",md:"lg"}} fontStyle="italic" color="gray.500">
+            <Text as="span" fontSize={{base:"md",md:"lg"}} fontStyle="italic" color="gray.500">
               A boutique consultancy firm
-              </Text>
+            </Text>
 
             <Text fontSize={{ base: "lg", md: "xl" }} mb={{ base: 6, md: 8 }} color="gray.600" lineHeight="tall">
               Empowering Your Business with Advanced Data and AI Solutions <br/>
-              
+
             </Text>
             <Button 
               as={RouterLink} 
@@ -34,9 +34,22 @@ const Home = () => {
             </Button>
           </Box>
 
-          <Box textAlign="center">
-            <Image src="/MISRON.png" alt="MISRON Consulting Logo" width="100%" height="auto" />
-          </Box>
+          {/* Logo Section - Enhanced for Professional Look */}
+          <Box textAlign="center"
+          borderRadius="md"
+          overflow="hidden"
+          boxShadow="md"
+          bg="white"
+        >
+          <Image
+            src="/MISRONLOGO.png"
+            alt="MISRON Consulting Logo"
+            width={{ base: '80%', md: '60%', lg: '50%' }} // Adjust these values as needed
+            height="auto"
+            objectFit="contain"
+            borderRadius="md"
+          />
+        </Box>
         </SimpleGrid>
 
         {/* Services Section */}
