@@ -34,22 +34,26 @@ const Home = () => {
             </Button>
           </Box>
 
-          {/* Logo Section - Enhanced for Professional Look */}
-          <Box textAlign="center"
-          borderRadius="md"
-          overflow="hidden"
-          boxShadow="md"
-          bg="white"
-        >
-          <Image
-            src="/MISRONLOGO.png"
-            alt="MISRON Consulting Logo"
-            width={{ base: '80%', md: '60%', lg: '50%' }} // Adjust these values as needed
-            height="auto"
-            objectFit="contain"
+            <Box
+            textAlign="center"
             borderRadius="md"
-          />
+            overflow="hidden"
+            boxShadow="md"
+            bg="white"
+            display="flex"          // Enable Flexbox
+            justifyContent="center" // Center horizontally
+            alignItems="center"     // Center vertically
+          >
+            <Image
+              src="/MISRONLOGO.png"
+              alt="MISRON Consulting Logo"
+              width={{ base: '80%', md: '60%', lg: '50%' }}
+              height="auto"
+              objectFit="contain"
+              borderRadius="md"
+            />
         </Box>
+
         </SimpleGrid>
 
         {/* Services Section */}
