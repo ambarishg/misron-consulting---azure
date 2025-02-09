@@ -19,6 +19,7 @@ const About = () => {
   const headingColor = useColorModeValue("brand.600", "brand.200");
   const textColor = useColorModeValue("gray.600", "gray.300");
   const iconColor = useColorModeValue("blue.500", "blue.200");
+  const langColor = useColorModeValue("orange.500", "orange.200");
   const dividerColor = useColorModeValue("gray.200", "gray.700");
   const containerBg = useColorModeValue("gray.50", "gray.900"); // Very light background for better contrast
 
@@ -82,6 +83,11 @@ const About = () => {
             embodies our dedication to seamlessly integrating state-of-the-art technology with
             profound industry insights, enabling us to deliver transformative and impactful
             solutions for our valued clients.
+          </Text>
+          <Text fontSize="sm" color={textColor} mt={4}>
+            Bengali is a language spoken in the Indian subcontinent, particularly in the region of Bengal,India and Bangladesh.
+            Bengali is the fifth most spoken native language and the seventh most spoken language by the total number of speakers in the world.
+            It is the fifth most spoken Indo-European language.
           </Text>
         </MotionBox>
 
