@@ -124,7 +124,7 @@ const CoInnovationServices = () => {
   const aiIconColor = useColorModeValue("blue.500", "blue.300");
 
   // Dark Orange Border Color
-  const darkOrangeBorder = useColorModeValue("orange.500", "orange.700");
+  const darkBorder = useColorModeValue("blackAlpha.900");
 
   return (
     <Container maxW="container.xl" py={{ base: 8, md: 16 }}>
@@ -151,14 +151,14 @@ const CoInnovationServices = () => {
           spacing={{ base: 6, md: 10 }}
         >
           {/* AI Platform Service */}
-                    {/* AI Platform Section */}
-                    <MotionBox
+            
+            <MotionBox
             borderWidth={2} // Increased for emphasis
             borderRadius="lg"
             p={{ base: 6, md: 8 }}
             shadow="md"
             bg={aiCardBg}
-            borderColor={darkOrangeBorder} // Use the dark orange border
+            borderColor={darkBorder} // Use the dark orange border
             whileHover={{ scale: 1.03, transition: { duration: 0.2 } }}
           >
             <VStack align="start" spacing={{ base: 3, md: 4 }}>
