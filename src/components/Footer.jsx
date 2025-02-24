@@ -34,7 +34,7 @@ const Footer = () => {
           </Text>
           <Text>SaltLake Kolkata India</Text>
           <Text>Phone: (91) 62893290271</Text>
-          <Text>Email: misron.consulting@gmail.com</Text>
+          <Text>Email: misron@misronconsulting.com</Text>
         </VStack>
       </Flex>
       <Text mt={8} textAlign="center" fontSize="sm">
