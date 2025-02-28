@@ -71,6 +71,14 @@ const Header = () => {
           </Link>
           <Link
             as={RouterLink}
+            to="/searchassistant"
+            mr={6}
+            _hover={{ color: "brand.200" }}
+          >
+            Products
+          </Link>
+          <Link
+            as={RouterLink}
             to="/services"
             mr={6}
             _hover={{ color: "brand.200" }}

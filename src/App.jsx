@@ -10,6 +10,7 @@ import theme from "./theme";
 import Partners from "./components/Partners";
 import Projects from "./components/Projects";
 import CoInnovationServices from "./pages/CoInnovationServices";
+import SearchAssistant from "./pages/SearchAssistant";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
               <Route path="/partners" element={<Partners />} />
               <Route path="/projects" element={<Projects />} />
               <Route path= "/coinnovationservices" element={<CoInnovationServices />} />
+              <Route path= "/searchassistant" element={<SearchAssistant />} />
             </Routes>
           </Box>
           <Footer />

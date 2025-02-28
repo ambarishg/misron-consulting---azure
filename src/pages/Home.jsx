@@ -14,7 +14,7 @@ const Home = () => {
             </Heading>
 
             <Text as="span" fontSize={{base:"md",md:"lg"}} fontStyle="italic" color="gray.500">
-              A boutique consultancy firm
+              A boutique digital engineering firm
             </Text>
 
             <Text fontSize={{ base: "lg", md: "xl" }} mb={{ base: 6, md: 8 }} color="gray.600" lineHeight="tall">
@@ -53,8 +53,48 @@ const Home = () => {
               borderRadius="md"
             />
         </Box>
-
         </SimpleGrid>
+
+        {/* Services Section */}
+        <Box>
+          <Heading as="h2" size={{ base: "lg", md: "xl" }} mb={{ base: 6, md: 8 }} textAlign="center" color="blue.800" fontWeight="semibold">
+            Our Products
+          </Heading>
+          <SimpleGrid columns={{ base: 1, md: 2 }} spacing={{ base: 6, md: 8 }}>
+            {[
+             {
+              title: "Misron Assistant",
+              description:
+                "Enables users to extract precise information from uploaded documents such as research papers, legal contracts, and financial statements. Unlike traditional search engines that rely on vast, unverified internet sources, this system focuses exclusively on user-supplied documents, ensuring trustworthiness and relevance. It highlights references for transparency and reveals discrepancies in conflicting data, enabling users to refine their sources.",
+            },
+            {
+              title: "AI Bee Health",
+              description:
+                "AI Bee Health is an innovative solution leveraging advanced deep learning models to detect and predict bee diseases, ensuring healthier bee colonies and optimized honey production. This product represents our commitment to sustainable agriculture and technological innovation.",
+            },
+             
+            ].map((service, index) => (
+              <Box 
+                key={index} 
+                borderWidth={1} 
+                borderRadius="lg" 
+                p={{ base: 4, md: 6 }} 
+                shadow="md" 
+                bg="white" 
+                transition="all 0.3s" 
+                _hover={{ shadow: "xl", transform: "translateY(-10px)", bg: "blue.50" }}
+              >
+                <Heading as="h3" size={{ base: "md", md: "lg" }} mb={{ base: 2, md: 4 }} color="blue.800" fontWeight="medium">
+                  {service.title}
+                </Heading>
+                <Text fontSize={{ base: "sm", md: "md" }} color="gray.600" lineHeight="tall">{service.description}</Text>
+              </Box>
+            ))}
+          </SimpleGrid>
+        </Box>
+
+
+       
 
         {/* Services Section */}
         <Box>
