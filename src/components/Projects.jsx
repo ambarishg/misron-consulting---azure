@@ -57,7 +57,7 @@ import {
               {/* Centered Text */}
               AI Bee Health is an innovative solution leveraging advanced deep
               learning models to detect and predict bee diseases, ensuring
-              healthier bee colonies and optimized honey production. This project
+              healthier bee colonies and optimized honey production. This product
               represents our commitment to sustainable agriculture and
               technological innovation.
             </Text>
